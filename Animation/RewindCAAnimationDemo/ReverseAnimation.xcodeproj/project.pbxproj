@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FB3077B192B5081000ADB3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB3077A192B5081000ADB3C /* Foundation.framework */; };
+		9FB3077D192B5081000ADB3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB3077C192B5081000ADB3C /* CoreGraphics.framework */; };
+		9FB3077F192B5081000ADB3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB3077E192B5081000ADB3C /* UIKit.framework */; };
+		9FB30785192B5081000ADB3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FB30783192B5081000ADB3C /* InfoPlist.strings */; };
+		9FB30787192B5081000ADB3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB30786192B5081000ADB3C /* main.m */; };
+		9FB3078B192B5081000ADB3C /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB3078A192B5081000ADB3C /* SCAppDelegate.m */; };
+		9FB3078E192B5081000ADB3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3078C192B5081000ADB3C /* Main.storyboard */; };
+		9FB30793192B5081000ADB3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FB30792192B5081000ADB3C /* Images.xcassets */; };
+		9FB3079A192B5081000ADB3C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB30799192B5081000ADB3C /* XCTest.framework */; };
+		9FB3079B192B5081000ADB3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB3077A192B5081000ADB3C /* Foundation.framework */; };
+		9FB3079C192B5081000ADB3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB3077E192B5081000ADB3C /* UIKit.framework */; };
+		9FB307A4192B5081000ADB3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FB307A2192B5081000ADB3C /* InfoPlist.strings */; };
+		9FB307A6192B5081000ADB3C /* ReverseAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB307A5192B5081000ADB3C /* ReverseAnimationTests.m */; };
+		9FB307B1192BD50C000ADB3C /* SCAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB307B0192BD50C000ADB3C /* SCAnimViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FB3079D192B5081000ADB3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FB3076F192B5081000ADB3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FB30776192B5081000ADB3C;
+			remoteInfo = ReverseAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FB30777192B5081000ADB3C /* ReverseAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReverseAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FB3077A192B5081000ADB3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9FB3077C192B5081000ADB3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9FB3077E192B5081000ADB3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9FB30782192B5081000ADB3C /* ReverseAnimation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReverseAnimation-Info.plist"; sourceTree = "<group>"; };
+		9FB30784192B5081000ADB3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9FB30786192B5081000ADB3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9FB30788192B5081000ADB3C /* ReverseAnimation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReverseAnimation-Prefix.pch"; sourceTree = "<group>"; };
+		9FB30789192B5081000ADB3C /* SCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
+		9FB3078A192B5081000ADB3C /* SCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
+		9FB3078D192B5081000ADB3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9FB30792192B5081000ADB3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9FB30798192B5081000ADB3C /* ReverseAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReverseAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FB30799192B5081000ADB3C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9FB307A1192B5081000ADB3C /* ReverseAnimationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReverseAnimationTests-Info.plist"; sourceTree = "<group>"; };
+		9FB307A3192B5081000ADB3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9FB307A5192B5081000ADB3C /* ReverseAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseAnimationTests.m; sourceTree = "<group>"; };
+		9FB307AF192BD50C000ADB3C /* SCAnimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAnimViewController.h; sourceTree = "<group>"; };
+		9FB307B0192BD50C000ADB3C /* SCAnimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAnimViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FB30774192B5081000ADB3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB3077D192B5081000ADB3C /* CoreGraphics.framework in Frameworks */,
+				9FB3077F192B5081000ADB3C /* UIKit.framework in Frameworks */,
+				9FB3077B192B5081000ADB3C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB30795192B5081000ADB3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB3079A192B5081000ADB3C /* XCTest.framework in Frameworks */,
+				9FB3079C192B5081000ADB3C /* UIKit.framework in Frameworks */,
+				9FB3079B192B5081000ADB3C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FB3076E192B5081000ADB3C = {
+			isa = PBXGroup;
+			children = (
+				9FB30780192B5081000ADB3C /* ReverseAnimation */,
+				9FB3079F192B5081000ADB3C /* ReverseAnimationTests */,
+				9FB30779192B5081000ADB3C /* Frameworks */,
+				9FB30778192B5081000ADB3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FB30778192B5081000ADB3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FB30777192B5081000ADB3C /* ReverseAnimation.app */,
+				9FB30798192B5081000ADB3C /* ReverseAnimationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FB30779192B5081000ADB3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FB3077A192B5081000ADB3C /* Foundation.framework */,
+				9FB3077C192B5081000ADB3C /* CoreGraphics.framework */,
+				9FB3077E192B5081000ADB3C /* UIKit.framework */,
+				9FB30799192B5081000ADB3C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FB30780192B5081000ADB3C /* ReverseAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				9FB30789192B5081000ADB3C /* SCAppDelegate.h */,
+				9FB3078A192B5081000ADB3C /* SCAppDelegate.m */,
+				9FB3078C192B5081000ADB3C /* Main.storyboard */,
+				9FB307AF192BD50C000ADB3C /* SCAnimViewController.h */,
+				9FB307B0192BD50C000ADB3C /* SCAnimViewController.m */,
+				9FB30792192B5081000ADB3C /* Images.xcassets */,
+				9FB30781192B5081000ADB3C /* Supporting Files */,
+			);
+			path = ReverseAnimation;
+			sourceTree = "<group>";
+		};
+		9FB30781192B5081000ADB3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FB30782192B5081000ADB3C /* ReverseAnimation-Info.plist */,
+				9FB30783192B5081000ADB3C /* InfoPlist.strings */,
+				9FB30786192B5081000ADB3C /* main.m */,
+				9FB30788192B5081000ADB3C /* ReverseAnimation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9FB3079F192B5081000ADB3C /* ReverseAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FB307A5192B5081000ADB3C /* ReverseAnimationTests.m */,
+				9FB307A0192B5081000ADB3C /* Supporting Files */,
+			);
+			path = ReverseAnimationTests;
+			sourceTree = "<group>";
+		};
+		9FB307A0192B5081000ADB3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FB307A1192B5081000ADB3C /* ReverseAnimationTests-Info.plist */,
+				9FB307A2192B5081000ADB3C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FB30776192B5081000ADB3C /* ReverseAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FB307A9192B5081000ADB3C /* Build configuration list for PBXNativeTarget "ReverseAnimation" */;
+			buildPhases = (
+				9FB30773192B5081000ADB3C /* Sources */,
+				9FB30774192B5081000ADB3C /* Frameworks */,
+				9FB30775192B5081000ADB3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReverseAnimation;
+			productName = ReverseAnimation;
+			productReference = 9FB30777192B5081000ADB3C /* ReverseAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FB30797192B5081000ADB3C /* ReverseAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FB307AC192B5081000ADB3C /* Build configuration list for PBXNativeTarget "ReverseAnimationTests" */;
+			buildPhases = (
+				9FB30794192B5081000ADB3C /* Sources */,
+				9FB30795192B5081000ADB3C /* Frameworks */,
+				9FB30796192B5081000ADB3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FB3079E192B5081000ADB3C /* PBXTargetDependency */,
+			);
+			name = ReverseAnimationTests;
+			productName = ReverseAnimationTests;
+			productReference = 9FB30798192B5081000ADB3C /* ReverseAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FB3076F192B5081000ADB3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SC;
+				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = "StringCode Ltd";
+				TargetAttributes = {
+					9FB30797192B5081000ADB3C = {
+						TestTargetID = 9FB30776192B5081000ADB3C;
+					};
+				};
+			};
+			buildConfigurationList = 9FB30772192B5081000ADB3C /* Build configuration list for PBXProject "ReverseAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FB3076E192B5081000ADB3C;
+			productRefGroup = 9FB30778192B5081000ADB3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FB30776192B5081000ADB3C /* ReverseAnimation */,
+				9FB30797192B5081000ADB3C /* ReverseAnimationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FB30775192B5081000ADB3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB30793192B5081000ADB3C /* Images.xcassets in Resources */,
+				9FB30785192B5081000ADB3C /* InfoPlist.strings in Resources */,
+				9FB3078E192B5081000ADB3C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB30796192B5081000ADB3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB307A4192B5081000ADB3C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FB30773192B5081000ADB3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB3078B192B5081000ADB3C /* SCAppDelegate.m in Sources */,
+				9FB30787192B5081000ADB3C /* main.m in Sources */,
+				9FB307B1192BD50C000ADB3C /* SCAnimViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB30794192B5081000ADB3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB307A6192B5081000ADB3C /* ReverseAnimationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FB3079E192B5081000ADB3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FB30776192B5081000ADB3C /* ReverseAnimation */;
+			targetProxy = 9FB3079D192B5081000ADB3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9FB30783192B5081000ADB3C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FB30784192B5081000ADB3C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9FB3078C192B5081000ADB3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FB3078D192B5081000ADB3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9FB307A2192B5081000ADB3C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FB307A3192B5081000ADB3C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FB307A7192B5081000ADB3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9FB307A8192B5081000ADB3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FB307AA192B5081000ADB3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReverseAnimation/ReverseAnimation-Prefix.pch";
+				INFOPLIST_FILE = "ReverseAnimation/ReverseAnimation-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.touchnote.iphone.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9FB307AB192B5081000ADB3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReverseAnimation/ReverseAnimation-Prefix.pch";
+				INFOPLIST_FILE = "ReverseAnimation/ReverseAnimation-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.touchnote.iphone.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9FB307AD192B5081000ADB3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReverseAnimation.app/ReverseAnimation";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReverseAnimation/ReverseAnimation-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ReverseAnimationTests/ReverseAnimationTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.touchnote.iphone.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9FB307AE192B5081000ADB3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReverseAnimation.app/ReverseAnimation";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReverseAnimation/ReverseAnimation-Prefix.pch";
+				INFOPLIST_FILE = "ReverseAnimationTests/ReverseAnimationTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.touchnote.iphone.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FB30772192B5081000ADB3C /* Build configuration list for PBXProject "ReverseAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FB307A7192B5081000ADB3C /* Debug */,
+				9FB307A8192B5081000ADB3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FB307A9192B5081000ADB3C /* Build configuration list for PBXNativeTarget "ReverseAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FB307AA192B5081000ADB3C /* Debug */,
+				9FB307AB192B5081000ADB3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FB307AC192B5081000ADB3C /* Build configuration list for PBXNativeTarget "ReverseAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FB307AD192B5081000ADB3C /* Debug */,
+				9FB307AE192B5081000ADB3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FB3076F192B5081000ADB3C /* Project object */;
+}
